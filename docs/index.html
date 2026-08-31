@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>whitedragon-dev Licenses</title>
     <style>
-        /* ---- Reset & Base ---- */
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +19,6 @@
             padding: 2rem 1rem;
         }
 
-        /* ---- Container ---- */
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -30,7 +28,6 @@
             border-radius: 4px;
         }
 
-        /* ---- Header ---- */
         .header {
             border-bottom: 3px solid #2a5c8a;
             padding-bottom: 1.2rem;
@@ -50,7 +47,6 @@
             margin-top: 0.2rem;
         }
 
-        /* ---- License List ---- */
         .license-list {
             margin: 2rem 0;
         }
@@ -108,16 +104,10 @@
             letter-spacing: 0.3px;
         }
 
-        /* ---- Coming Soon ---- */
-        .coming-soon {
-            opacity: 0.6;
+        .license-item .badge.new {
+            background-color: #2a7a4a;
         }
 
-        .coming-soon .badge {
-            background-color: #888;
-        }
-
-        /* ---- Typography ---- */
         h2 {
             font-size: 1.6rem;
             margin-top: 2.2rem;
@@ -141,7 +131,6 @@
             border-bottom: 2px solid #2a5c8a;
         }
 
-        /* ---- Footer ---- */
         .footer {
             margin-top: 2.5rem;
             padding-top: 1.5rem;
@@ -160,7 +149,16 @@
             border-bottom: 1px solid #2a5c8a;
         }
 
-        /* ---- Responsive ---- */
+        .note {
+            background-color: #fef9e7;
+            border: 1px solid #f0e0b8;
+            border-radius: 6px;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+            color: #5a4a2a;
+        }
+
         @media (max-width: 700px) {
             body {
                 padding: 0.5rem;
@@ -202,7 +200,6 @@
 
     <div class="container">
 
-        <!-- ===== HEADER ===== -->
         <div class="header">
             <h1>whitedragon-dev Licenses</h1>
             <div class="subhead">Open-source license templates for developers</div>
@@ -216,10 +213,8 @@
             to view its full documentation.
         </p>
 
-        <!-- ===== LICENSE LIST ===== -->
         <div class="license-list">
 
-            <!-- License 1: WD-NCL v1.0 -->
             <div class="license-item">
                 <span class="version">WD-NCL</span>
                 <span class="description">
@@ -227,23 +222,28 @@
                     while preventing commercial exploitation.
                 </span>
                 <span class="link">
-                    <a href="/WD-NCL/v1.0/index.html">View →</a>
+                    <a href="v1.0/index.html">View →</a>
                 </span>
                 <span class="badge">v1.0</span>
             </div>
 
-            <!-- License 2: Coming Soon -->
-            <div class="license-item coming-soon">
-                <span class="version">???</span>
+            <div class="license-item">
+                <span class="version">WD-SAL</span>
                 <span class="description">
-                    More licenses coming soon.
+                    Source-Available License – For developers who want patent protection,
+                    no sublicensing by third parties, and the strongest liability waiver.
                 </span>
                 <span class="link">
-                    <span style="color:#999;">Coming Soon</span>
+                    <a href="../WD-SAL/v1.0/index.html">View →</a>
                 </span>
-                <span class="badge">—</span>
+                <span class="badge new">v1.0</span>
             </div>
 
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> WD-SAL is hosted in a separate repository.
+            Both licenses are maintained by whitedragon-dev.
         </div>
 
         <p style="margin-top:1.5rem; font-size:0.9rem; color:#666;">
@@ -251,23 +251,18 @@
             custom templates designed for specific use cases.
         </p>
 
-        <!-- ===== FOOTER ===== -->
         <div class="footer">
             <p>
                 Copyright &copy; 2026 whitedragon-dev.
-                This documentation site is licensed under the
-                <a href="/WD-NCL/v1.0/license/index.html">WD-NCL v1.0</a>.
             </p>
             <p>
-                Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.
-                Built with free software tools.
-            </p>
-            <p>
-                <a href="https://github.com/whitedragon-dev/WD-NCL">View on GitHub</a>
+                <a href="https://github.com/whitedragon-dev/WD-NCL">View WD-NCL on GitHub</a>
+                &bull;
+                <a href="https://github.com/whitedragon-dev/WD-SAL">View WD-SAL on GitHub</a>
             </p>
         </div>
 
     </div>
 
 </body>
-  </html>
+</html>
